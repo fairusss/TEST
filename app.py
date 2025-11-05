@@ -26,7 +26,8 @@ def webhook():
                 "text": "🌐 Open WebApp",
                 "web_app": {"url": webapp_url}
             }]],
-            "resize_keyboard": True
+            "resize_keyboard": True,
+            "one_time_keyboard": True
         }
 
         requests.post(f"{TELEGRAM_API}/sendMessage", json={
@@ -84,6 +85,9 @@ def webapp():
                 .then(r => alert('✅ Message sent to your Telegram!'))
                 .catch(err => alert('Failed to send: ' + err));
             }
+            console.log("Telegram initData:", tg.initData);
+            console.log("Telegram initDataUnsafe:", tg.initDataUnsafe);
+            console.log("Telegram user:", tg.initDataUnsafe?.user);
         </script>
     </body>
     </html>
