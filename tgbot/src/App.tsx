@@ -15,7 +15,21 @@ function App() {
         <div className='justify-end ml-auto w-22 mr-5 bg-emerald-800'>f</div>
       </header>
 
-      <main className='flex-1'></main>
+      <main className=' flex-1'>
+        <div className='flex flex-col mt-8'>
+          <Avatar size={96} className=' self-center mb-4'></Avatar>
+          <p className=' font-extrabold text-2xl'>Username</p>
+          <div className=' flex justify-around m-3 mt-8'>
+            <div className=' flex-1 bg-[#0c0d11] border border-[#13151b] rounded-2xl py-3 px-3 flex flex-col items-start'>
+              <div>
+                <img src="" alt="" />0
+              </div>
+            </div>
+            <div className=' flex-1 bg-[#0c0d11] border border-[#13151b] rounded-2xl py-3 px-3 flex flex-col items-start'>ITEM1</div>
+            <div className=' flex-1 bg-[#0c0d11] border border-[#13151b] rounded-2xl py-3 px-3 flex flex-col items-start'>ITEM1</div>
+          </div>
+        </div>
+      </main>
 
       <footer className='bg-blue-500 h-16 text-center flex justify-center items-center '></footer>
     </div>
